@@ -45,7 +45,7 @@ cacheSolve <- function(x, ...) {
   ## Get the matrix created in the last function 
   m <- x$getmatrix()
   ## Check to see whether the matrix has been created
-  ## If the Matrix has been created, then send user a message
+  ## If the Matrix has been created, send user a message
   if(!is.null(m)) {
     message("getting cached inverse")
     return(m)
