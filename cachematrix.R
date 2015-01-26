@@ -1,8 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Comments that explain the function have been included within the funcitons
 
-## Write a short comment describing this function
-## You may use the test code from our discussion forum
+## You may use the test code from our discussion forum if you wish to test the below functions
 ###### Test code below
 # x <- matrix(c(4,2,7,6), nrow=2, ncol=2)
 # y <- makeCacheMatrix(x)
@@ -31,14 +29,15 @@ makeCacheMatrix <- function(x = matrix()) {
   #the matrix x will have access to these two below functions to get and set the reverse
   setmatrix <- function(solve) m <<- solve
   getmatrix <- function() m
-  ##
+  ## The below contains a list function to
+  ## set the value of the matrix
+  ## get the value of the matrix
+  ## set the value of the inverse
+  ## get the value of the inverse
   list(set = set, get = get,
        setmatrix = setmatrix,
        getmatrix = getmatrix)
 }
-
-
-## Write a short comment describing this function
 
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
